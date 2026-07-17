@@ -158,6 +158,7 @@ p:last-child { margin-bottom: 0; }
   margin: 0 0 10px;
 }
 .links { font-family: var(--sans); font-size: 15px; }
+.links .sep { margin: 0 6px; color: var(--rule); }
 
 /* HONORS LIST */
 .honors-list { margin: 0; padding: 0; list-style: none; }
