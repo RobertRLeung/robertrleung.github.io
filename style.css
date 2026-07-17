@@ -2,8 +2,10 @@
   --bg: #fbfaf7;
   --text: #1c1c1a;
   --muted: #6b6a63;
-  --accent: #6b1f2a;      /* deep burgundy */
+  --accent: #6b1f2a;      /* deep burgundy — headings, section labels */
   --accent-soft: #8a3742;
+  --link: #cf2e2e;        /* vibrant red — clickable links */
+  --link-hover: #a81f1f;
   --rule: #e4e1d8;
   --max: 720px;
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
@@ -26,12 +28,12 @@ body {
 }
 
 a {
-  color: var(--accent);
+  color: var(--link);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color 0.15s ease, color 0.15s ease;
 }
-a:hover { color: var(--accent-soft); border-bottom-color: var(--accent-soft); }
+a:hover { color: var(--link-hover); border-bottom-color: var(--link-hover); }
 
 /* HEADER / NAV */
 .site-header {
@@ -66,7 +68,7 @@ a:hover { color: var(--accent-soft); border-bottom-color: var(--accent-soft); }
   font-size: 14px;
 }
 .nav-links a { color: var(--muted); border: none; }
-.nav-links a:hover { color: var(--accent); }
+.nav-links a:hover { color: var(--link); }
 
 /* LAYOUT */
 main {
